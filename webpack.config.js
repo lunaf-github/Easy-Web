@@ -27,8 +27,9 @@ module.exports = {
      },
      {
        test: /\.png|svg|jpg|gif$/,
-       use: 'url-loader?limit=8192'
-      //  use:["file-loader"]
+      //  use: 'url-loader?limit=8192'
+       use:[{loader:"file-loader"}]
+      // use:['file-loader']
      },
     ],
     // loaders: [
@@ -46,6 +47,7 @@ module.exports = {
   ],
   //resolve:
   devServer: {
+    noInfo:false,
     static:{
       publicPath: '/build',
       directory: path.resolve(__dirname, 'build')
