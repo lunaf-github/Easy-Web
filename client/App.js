@@ -1,9 +1,16 @@
 import React from "react";
+import DisplayTechLogos from './DisplayTechLogos'
 
-const App = () => ( 
+
+const App = () => {
+
+   return (
     <div>
-        <h1>Hello React</h1>
+      <DisplayTechLogos />
     </div>
-);
+   );
+
+}
+
 
 export default App;
