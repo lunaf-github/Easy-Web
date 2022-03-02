@@ -24,8 +24,19 @@ module.exports = {
      {
        test:/\.s?css/,
        use: ['style-loader', 'css-loader', 'sass-loader']
-     }
-    ]
+     },
+     {
+       test: /\.png|svg|jpg|gif$/,
+       use: 'url-loader?limit=8192'
+      //  use:["file-loader"]
+     },
+    ],
+    // loaders: [
+    //   {
+    //     test: /\.(png|jpg)$/,
+    //     loader: 'url-loader?limit=8192'
+    //   }
+    // ]
 
   },
   plugins:[
