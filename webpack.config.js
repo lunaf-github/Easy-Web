@@ -47,7 +47,6 @@ module.exports = {
   ],
   //resolve:
   devServer: {
-    noInfo:false,
     static:{
       publicPath: '/build',
       directory: path.resolve(__dirname, 'build')
