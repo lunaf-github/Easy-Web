@@ -1,0 +1,107 @@
+.itemHeader {
+  display:flex;
+  justify-content: space-between;
+  background-color: rgba(5, 5, 5, 0.3);
+  border-radius: 5px;
+  background-size:cover;
+  color: white;
+
+}
+
+body{
+ display: flex;
+ justify-content: center;
+ background-color: gray;
+ background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2020/08/san2.jpg");
+ background-attachment:fixed;
+ background-position: top;
+}
+
+article{
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  gap: 10px;
+}
+
+.itemContainer{ 
+
+  border-radius: 10px;
+}
+
+.intro,
+.projects {
+  display: flex;
+
+  box-shadow: 2px 2px 2px 2px;
+  border-radius: 10px;
+  background-color:rgba(211, 211, 211, 0.3);
+}
+
+.projects{
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap:10px;
+}
+
+.intro{
+  flex-direction: row;
+
+}
+
+.category{
+  box-shadow: 1px 1px 1px 1px;
+  border-radius: 10px;
+  width: 95%;
+}
+
+.profileFrame{
+ display: flex;
+ width: 250px;
+ height: 250px;
+ box-shadow: 5px 5px 5px;
+ border-radius: 50%;
+ background-position: center;
+ background-image: url("https://www.neweurope.eu/wp-content/uploads/2013/01/cat_videos.jpg");
+ 
+}
+
+.answer{
+  display:flex;
+  align-items: baseline;
+}
+
+
+h3{
+  font-size: medium;
+}
+
+button{
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid #1f1f1f;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#131212;
+  text-align:center;
+  transition: all 0.2s;
+  background-color: rgb(24, 24, 24,0.3);
+}
+
+button:hover{
+  color:#fbfbfb;
+  background-color:#252525;
+}
+  
+@media all and (max-width:30em){
+  
+button {
+  display:block;
+  margin:0.4em auto;
+}
+}
